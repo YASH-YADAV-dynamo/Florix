@@ -20,7 +20,8 @@ This project is a decentralized file-sharing platform that allows users to uploa
 
 ## Architecture
 
-- ![alt text](image.png)
+![image](https://github.com/user-attachments/assets/d1fef0b4-2a54-48e6-a5e6-4aba47f9739e)
+
 
 ## Getting Started
 
