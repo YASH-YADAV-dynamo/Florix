@@ -1,0 +1,185 @@
+/* Base styles for better default appearance */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Color Variables */
+:root {
+  --primary-gradient: linear-gradient(135deg, #9f05ff 0%, #fd5e08 100%);
+  --secondary-gradient: linear-gradient(135deg, #ff4646 0%, #ff8c42 100%);
+  --primary-bg: linear-gradient(135deg, #f6f9fc 0%, #ecf1f7 100%);
+  --white: #c47bd5;
+  --light-gray: #f0f0f0;
+  --dark-gray: #666;
+  --red-light: #ff4646;
+  --red-dark: #dc2626;
+  --blue-light: #3b82f6;
+  --blue-dark: #2563eb;
+}
+
+/* Main App Styles */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: var(--primary-bg);
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+  margin-bottom: 30px;
+}
+
+header .overlay {
+  width: 100%;
+  padding: 30px;
+  color: #1a1a1a;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Typography */
+h1 {
+  font-size: 60px;
+  margin-top: 2%;
+  margin-bottom: 20px;
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3, p {
+  margin-bottom: 20px;
+  color: var(--dark-gray);
+}
+
+/* Share Button Styles */
+.share {
+  padding: 12px 24px;
+  margin-top: 20px;
+  background: var(--secondary-gradient);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 70, 70, 0.2);
+}
+
+.share:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 70, 70, 0.3);
+}
+
+/* Wallet Connection Buttons */
+.button {
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  min-width: 200px;
+}
+
+.connect {
+  background: var(--blue-light);
+}
+
+.disconnect {
+  background: var(--red-light);
+}
+
+.connect:hover, .disconnect:hover {
+  transform: translateY(-2px);
+}
+
+.connect:focus, .disconnect:focus {
+  outline: 2px solid var(--blue-dark);
+}
+
+/* Modal Styles */
+.modal {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Account Display */
+.account-display {
+  background: var(--white);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 500px;
+  word-break: break-all;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+/* File Upload and Display Sections */
+.upload-section, .display-section {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 20px auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  header {
+    border-radius: 0 0 50% 50% / 20%;
+  }
+  
+  .button {
+    width: 90%;
+  }
+  
+  .upload-section, .display-section {
+    padding: 1rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}

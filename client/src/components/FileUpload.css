@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #f0f4f8; /* Light background for contrast */
+}
+
+/* Container for the upload box */
+.container {
+  width: 400px; /* Fixed width for the upload box */
+  padding: 20px; /* Padding around the content */
+  background-color: #ffffff; /* White background for the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 10px; /* Shadow for depth */
+  text-align: center; /* Center the text inside */
+  margin: 40px auto; /* Space around the container and center it */
+}
+
+/* Add bottom padding to the container */
+.container {
+  padding-bottom: 30px; /* Additional padding below the content */
+}
+
+/* Hide the file input element */
+input[type="file"] {
+  display: none;
+}
+
+/* Button for choosing files */
+.choose {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Gradient colors */
+  border-radius: 8px; /* Rounded corners */
+  color: #ffffff;
+  padding: 12px 24px; /* Padding for better touch targets */
+  border: none; /* Remove border */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: box-shadow 0.3s, transform 0.2s; /* Smooth transitions */
+  width: 100%; /* Full width for better alignment */
+}
+
+/* Hover effect for the choose button */
+.choose:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px; /* Shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Styling for text area */
+.textArea {
+  color: #333333; /* Dark text */
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque background */
+  border-radius: 6px; /* Rounded corners */
+  padding: 12px; /* Padding for text area */
+  border: 1px solid #6dd5ed; /* Border matching the button theme */
+  width: 100%; /* Full width */
+  height: 100px; /* Fixed height */
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px; /* Shadow for depth */
+  resize: none; /* Disable resizing */
+}
+
+/* Upload button styles */
+.upload {
+  background-color: #28a745; /* Consistent background color */
+  color: #ffffff;
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 8px; /* Consistent radius */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+  width: 100%; /* Full width */
+}
+
+/* Hover effect for the upload button */
+.upload:hover {
+  background-color: #71e1a8; /* Lighten background on hover */
+}
+
+/* Disabled state for the upload button */
+.upload:disabled,
+.upload[disabled] {
+  background-color: #dddddd; /* Softer disabled background */
+  color: #666666; /* Disabled text color */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+
+/* General styling for div elements */
+div {
+  padding: 15px; /* Padding for comfort */
+  margin-bottom: 15px; /* Space between divs */
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px; /* Shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff; /* White background */
+}

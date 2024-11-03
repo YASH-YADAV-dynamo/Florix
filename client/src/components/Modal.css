@@ -1,0 +1,98 @@
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background for better focus */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px); /* Add blur effect to background */
+}
+
+.modalContainer {
+  width: 400px; /* Reduced width for a more compact look */
+  border-radius: 16px; /* Slightly more rounded corners */
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 30px; /* Softer shadow */
+  display: flex;
+  flex-direction: column;
+  padding: 30px; /* More padding for a spacious feel */
+  color: #fff; /* White text for contrast */
+}
+
+.title {
+  font-size: 1.5rem; /* Increased title size */
+  margin-bottom: 15px; /* Spacing below the title */
+  text-align: center;
+  font-weight: 600; /* Bold title */
+}
+
+.modalContainer .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing below body */
+}
+
+.address {
+  height: 40px; /* Increased input height */
+  width: 100%; /* Full width */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 0 15px; /* Padding for input */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+input[type="text"]:focus {
+  background-color: #3a8dff; /* Focused input color */
+  outline: none; /* Remove default outline */
+}
+
+select {
+  width: 100%;
+  height: 40px; /* Consistent height */
+  border-radius: 8px; /* Rounded corners */
+  border: none; /* No border */
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text */
+  padding: 0 10px; /* Padding for select */
+  margin-bottom: 15px; /* Spacing below select */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+select:hover {
+  background-color: #e7f1ff; /* Light background on hover */
+}
+
+.modalContainer .footer {
+  display: flex;
+  justify-content: space-between; /* Space between buttons */
+}
+
+.modalContainer .footer button {
+  width: 45%; /* More balanced button size */
+  height: 40px; /* Increased button height */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.modalContainer .footer button:hover {
+  opacity: 0.8; /* Slightly fade buttons on hover */
+}
+
+#cancelBtn {
+  background-color: crimson; /* Red for cancel */
+}
+
+footer button {
+  background-color: #3a8dff; /* Blue for share button */
+}
+
+footer button:hover {
+  background-color: #0d74c6; /* Darker blue on hover */
+}

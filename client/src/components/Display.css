@@ -1,0 +1,73 @@
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  grid-gap: 15px; /* Increased gap for better spacing */
+  grid-auto-rows: 350px; /* Consistent row height */
+  margin: 20px; /* Increased margin for overall spacing */
+}
+
+/* Styling for images within the grid */
+.image-list img {
+  width: 100%; /* Fill grid cells */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover entire area */
+  border-radius: 12px; /* More rounded corners for images */
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px; /* Subtle shadow for depth */
+}
+
+.center {
+  margin: 40px auto; /* Center content */
+  max-width: 1200px; /* Maximum width for larger screens */
+  padding: 0 20px; /* Side padding for smaller screens */
+}
+
+/* Button styling */
+.button {
+  background-color: transparent; /* Base transparent color */
+  background-image: linear-gradient(135deg, #009ffd, #2a2a72); /* Improved gradient angle */
+  border-radius: 10px; /* Slightly more rounded corners */
+  color: #ffffff; /* White text */
+  padding: 12px 20px; /* Larger padding for touch targets */
+  border: none; /* No border */
+  font-size: 18px; /* Slightly larger font size */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Hover effect for button */
+.button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 15px; /* Enhanced shadow effect */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Styling for input field */
+.address {
+  display: block; /* Block display */
+  margin: 20px auto; /* Center with auto margins */
+  height: 45px; /* Increased input height */
+  width: 100%; /* Full width */
+  max-width: 350px; /* Maximum width */
+  text-align: center; /* Centered text */
+  border: 2px solid #ccc; /* Border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 8px; /* Increased padding */
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+/* Focus effect for input field */
+.address:focus {
+  background-color: #e0f7fa; /* Light blue on focus */
+  border-color: #009ffd; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* General text input styling */
+input[type="text"] {
+  font-size: 16px; /* Consistent font size */
+  width: 100%; /* Full width */
+}
+
+/* Focus effect for text input */
+input[type="text"]:focus {
+  background-color: #e0f7fa; /* Light blue on focus */
+}

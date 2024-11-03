@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f4f8; /* Soft background color for a fresh look */
+  color: #333; /* Default text color for better readability */
+  line-height: 1.6; /* Improve readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* Reset margin for headings */
+  color: #1e1e2f; /* Darker color for headings */
+}
+
+code {
+  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #f7f7f7; /* Light background for code snippets */
+  border-radius: 4px; /* Rounded corners for code blocks */
+  padding: 4px 6px; /* Padding for spacing */
+  font-size: 1rem; /* Base font size */
+  color: #c7254e; /* Distinct color for code */
+}
+
+.container {
+  max-width: 1200px; /* Limit width for better readability on large screens */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.button {
+  background-color: #009ffd; /* Primary button color */
+  border-radius: 8px; /* More rounded corners */
+  color: #ffffff; /* Text color for buttons */
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* Remove border */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor for buttons */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.button:hover {
+  background-color: #007acc; /* Darker shade on hover */
+  transform: translateY(-1px); /* Lift effect on hover */
+}
+
+.input {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid #ccc; /* Light border for inputs */
+  border-radius: 6px; /* Rounded corners */
+  margin-top: 10px; /* Margin for spacing */
+  transition: border-color 0.3s; /* Smooth border color change */
+}
+
+.input:focus {
+  border-color: #009ffd; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .button {
+    width: 100%; /* Full width for buttons on smaller screens */
+  }
+}
